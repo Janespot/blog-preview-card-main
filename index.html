@@ -6,29 +6,121 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   
-  <title>Frontend Mentor | Blog preview card</title>
+  <title>Janespot | Blog preview card</title>
 
+  <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Figtree"> -->
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    @font-face {
+      font-family: fontTest;
+      src: url(./assets/fonts/Figtree-VariableFont_wght.ttf);
+    }
+
+    * {
+      box-sizing: border-box;
+      color: hsl(0, 0%, 7%);
+      font-size: 1rem;
+      /* font-family: "Figtree"; */
+      font-family: "fontTest";
+    }
+
+    .attribution { 
+      font-size: 11px; 
+      text-align: center; 
+    }
+
+    .attribution a { 
+      color: hsl(228, 45%, 44%); 
+    }
+
+    body {
+      height: calc(100vh - 20px);
+      background-color: hsl(47, 88%, 63%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    main {
+      width: 100%;
+      max-width: 370px;
+      background-color: hsl(0, 0%, 100%);
+      display: flex;
+      flex-direction: column;
+      padding: 15px;
+      box-shadow: 5px 5px hsl(0, 0%, 7%);
+      border-radius: 12px;
+      border: 1px solid hsl(0, 0%, 7%);
+    }
+
+    /* header {
+      width: 340px; 
+    } */
+
+    object {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    #tag {
+      background-color: hsl(47, 88%, 63%);
+      font-weight: bold;
+      padding: 3px 10px;
+      width: fit-content;
+      border-radius: 3px;
+      margin-top: 1rem;
+    }
+
+    h1 {
+      margin: 0;
+      font-weight: bolder;
+    }
+
+    #main_paragraph {
+      color: hsl(0, 0%, 42%);
+      font-size: .8rem;
+    }
+
+    span {
+      font-weight: bold;
+    }
   </style>
 </head>
 <body>
+  <main>
+    <header>
+      <object data="./assets/images/illustration-article.svg"></object>
+    </header>
 
-  Learning
+    <div id="tag" style="font-size: .8rem;">
+      Learning
+    </div>
 
-  Published 21 Dec 2023
+    <p style="font-size: .8rem;">
+      Published 21 Dec 2023
+    </p>
 
-  HTML & CSS foundations
+    <h1>
+      HTML & CSS foundations
+    </h1>
 
-  These languages are the backbone of every website, defining structure, content, and presentation.
+    <p id="main_paragraph">
+      These languages are the backbone of every website, defining structure, content, and presentation.
+    </p>
 
-  Greg Hooper
+    <div style="display: flex; align-items: center; gap: .5rem;">
+      <img src="./assets/images/image-avatar.webp" alt="image avatar" style="width: 30px; height: auto;" />
+      <span style="font-size: .8rem;">
+        Greg Hooper
+      </span>
+    </div>
+  </main>
   
-  <div class="attribution">
+  <footer style="position: absolute; bottom: 10px;" class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    Coded by <a href="https://github.com/Janespot">Jane Odhiambo</a>.
+  </footer>
 </body>
 </html>

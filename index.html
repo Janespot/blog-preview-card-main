@@ -78,6 +78,19 @@
       font-weight: bolder;
     }
 
+    a  {
+      color: hsl(0, 0%, 7%);
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: hsl(47, 88%, 63%);
+    }
+
+    a:active {
+      color: hsl(47, 88%, 63%);
+    }
+
     #main_paragraph {
       color: hsl(0, 0%, 42%);
       font-size: .8rem;
@@ -91,7 +104,7 @@
 <body>
   <main>
     <header>
-      <object data="./assets/images/illustration-article.svg"></object>
+      <object data="./assets/images/illustration-article.svg" aria-label="Blog Header Image"></object>
     </header>
 
     <div id="tag" style="font-size: .8rem;">
@@ -103,7 +116,7 @@
     </p>
 
     <h1>
-      HTML & CSS foundations
+      <a href="#">HTML & CSS foundations</a>
     </h1>
 
     <p id="main_paragraph">
